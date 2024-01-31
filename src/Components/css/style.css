@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body
+{
+    display: grid;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+div.logo
+{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 10px 0 10px 0;
+}
+
+div.logoAnim
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: i1 7s infinite linear;
+}
+
+div.logoAnim div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes i1
+{
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-25%);}
+}
+
+div.App
+{
+    background-color: aliceblue;
+    width: 70vw;
+    height: auto;
+    border: none;
+    outline: none;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+form.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+form div input[type=text]
+{
+    background-color: rgb(201, 234, 246);
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-left: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+form button
+{
+    background-color: rgb(201, 234, 246);
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+form div input[type=text]:focus
+{
+    border: 1px solid lightblue;
+}
+
+div.weather
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div.city_temp
+{
+    margin-left: 15%;
+}
+
+div.city_temp p
+{
+    color: lightslategray;
+    font-size: small;
+    margin-bottom: 40px;
+}
+
+div.city_temp h2
+{
+    font-size: 50px;
+}
+
+div.weather_desc
+{
+    margin-right: 15%;
+    text-align: center;
+}
+
+div.forcast_pos
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+div.forcast
+{
+    background-color: rgb(201, 234, 246);
+    width: fit-content;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+div.forcast span
+{
+    color: lightslategray;
+    font-weight: 700;
+}
+
+div.forcast_cards
+{
+    display: flex;
+    justify-content: center;
+}
+
+div.forcast_card
+{
+    text-align: center;
+}
+
+div.vert_line
+{
+    background-color: rgb(216, 188, 188);
+    width: .1px;
+    margin: 0 20px 0 20px;
+}
